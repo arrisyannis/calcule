@@ -22,14 +22,64 @@
             color: hsl(228, 45%, 44%);
         }
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div>
+<body style="background-color: rgb(59, 71, 99);" class="w-screen h-screen flex items-center justify-center ">
+    <main>
+        <!--! navbar -->
+        <section class="  ">
+            <div class="flex justify-between items-center">
+                <h1 class="text-white font-bold text-lg">calc</h1>
+                <div>
+                    <p class="uppercase text-white text-xs">theme</p>
+                    <div style="background-color: rgb(37, 45, 67);" class=" flex p-1  rounded-3xl w-16">
+                        <div class="h-4 w-4 bg-red-600 rounded-full "></div>
+                    </div>
+                </div>
+            </div>
+            <!--! result -->
+            <div style="background-color: rgb(37, 45, 67) " class=" flex justify-end py-4 px-4 rounded-lg my-4 ">
+                <h1 class="text-3xl font-bold text-white ">399.981</h1>
+            </div>
+            <!--! button -->
+            <div style="background-color: rgb(37, 45, 67) " class=" p-4 rounded-lg ">
+                <div class="flex gap-2 my-4 justify-between ">
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">7</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">8</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">9</button>
+                    <div class=" flex justify-center w-16 px-8 py-2 bg-sky-800 rounded text-2xl font-extrabold text-white border-b-4 border-blue-300 md:w-24 flex justify-center">
+                        <p>DEL</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 my-4 justify-between ">
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">4</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">5</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">6</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">+</button>
+                </div>
+                <div class="flex gap-2 my-4 justify-between ">
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">1</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">2</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">3</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">-</button>
+                </div>
+                <div class="flex gap-2 my-4 justify-between ">
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">.</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">0</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">/</button>
+                    <button style="color:rgb(37, 45, 67); " class="w-16 px-8 py-2 bg-orange-100 rounded text-2xl font-extrabold text-indigo-800 border-b-4 border-gray-300 md:w-24 flex justify-center">x</button>
+                </div>
+                <div class="flex gap-2 justify-between mb-4 ">
+                    <button class="flex-1 px-8 py-2 bg-sky-800 rounded text-2xl font-extrabold text-white border-b-4 border-gray-300 ">reset</button>
+                    <button class="flex-1 px-8 py-2 bg-red-500 rounded text-2xl font-extrabold text-white border-b-4 border-red-600 ">=</button>
+                </div>
 
-    </div>
+            </div>
 
+        </section>
 
+    </main>
 </body>
 
 </html>
